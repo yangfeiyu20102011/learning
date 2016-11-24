@@ -85,9 +85,13 @@ func main(){
 执行结果：
 
 hello world
+
 hello world
+
 hello world
+
 hello world
+
 hello world
 
 
@@ -131,12 +135,21 @@ func main() {
 执行结果
 
 I'm counting
+
 finish 1
+
 I'm counting
+
 finish 1
+
 I'm counting
+
 I'm counting
+
 finish 1
+
 I'm counting
+
 finish 1
+
 finish 1
