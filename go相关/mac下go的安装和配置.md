@@ -31,18 +31,13 @@ go version显示版本信息
 
 ### go的第一个程序Hello World
 
-~~~import  &quot;fmt&quot; 
+```go
+import "fmt"
 
-~~~
+func main() {
 
-~~~func main() {
+fmt.Println("Hello World!")
 
-~~~
+}
+```
 
-~~~fmt.Println(&quot;Hello World!&quot;)
-
-~~~
-
-~~~}
-
-~~~
