@@ -1,11 +1,17 @@
-1.golang下载地址
+### golang下载地址
+
 http://golangtc.com/download
 
-2.安装完成后配置环境变量
+
+
+### 安装完成后配置环境变量
+
 GOROOT为go的安装地址，通常情况默认安装在/usr/local/go
 GOPATH为go项目的工作目录
 PATH为系统变量
 echo $PATH能够打印出对应值
+
+
 
 在个人目录下，编辑.bash_profile文件
 在文件末尾添加
@@ -15,15 +21,28 @@ export PATH=$PATH:$GOROOT
 
 source .bash_profile使其生效
 
-3.安装完后测试是否正常安装
+
+
+### 安装完后测试是否正常安装
+
 go version显示版本信息
 
-4.go的第一个程序Hello World
-package main
-import  "fmt" 
-func main() {
-    fmt.Println("Hello World!")
-}
 
-go run x.go(程序文件名)
-成功则打印出Hello World!
+
+### go的第一个程序Hello World
+
+~~~import  &quot;fmt&quot; 
+
+~~~
+
+~~~func main() {
+
+~~~
+
+~~~fmt.Println(&quot;Hello World!&quot;)
+
+~~~
+
+~~~}
+
+~~~
