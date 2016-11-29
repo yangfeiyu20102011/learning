@@ -82,3 +82,72 @@ var b Bird = new(Animal)
 
 
 ## 接口查询
+
+```go
+if varName2, ok := varName1.(interface2|typeName); ok {
+   //此时 varName2 的类型由 interface1 转为 interface2，或者 varName1 不是 typeName 类型的变量  
+} else {
+   //不能转换 interface，或者 varName1 不是 typeName 类型的变量  
+}
+
+//if c,ok := a.(Behavior) ; ok{
+	//	fmt.Println("ok it's animal")
+	//	fmt.Println(c.Fly())
+	//}
+```
+
+接口查询是否成功，要在运行期才能确定。
+
+
+
+## 类型查询
+
+```go
+package main
+
+import (
+   "fmt"
+)
+
+func main() {
+   var a interface{} = 5
+   switch v := a.(type) {
+   case string:
+      fmt.Println("it's a string ",v)
+   case int:
+      fmt.Println("it's a int ",v)
+   }
+}
+```
+
+运行结果是
+
+it's a int  5
+
+
+
+```go
+package main
+
+import (
+   "fmt"
+)
+
+func main() {
+   var a interface{} = "hello"
+   switch v := a.(type) {
+   case string:
+      fmt.Println("it's a string ",v)
+   case int:
+      fmt.Println("it's a int ",v)
+   }
+}
+```
+
+运行结果是
+
+it's a string  hello
+
+
+
+*注意，varName.(type)只可在switch中使用
